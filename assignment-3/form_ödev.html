@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body bgcolor="orange">
+    <div>
+      <h2 align = "center"> ------ Personel Kayıt Form Bilgisi Girişi----</h2>
+    </div>
+  <form name="form" action="index.asp" method="post">
+      <b>Kullanıcı Adı:</b><br />
+      <input type="text" name="isim" size="24"><br />ß<br />
+      <b>Şifre:</b><br />
+      <input type="password" name="sifre" size="16"><br /><br />
+      <input type="submit" name="gonder" value="Gönder"><br /><br />
+   </form>
+   
+   
+    <form name="form" action="index.asp" method="post">
+      <b>Yorumunuzu Yazın:</b><br />
+      <textarea cols="40" rows="4">Yorum Kutusu</textarea><br /><br />
+   </form>
+   
+   
+     <input type="radio" name="cinsiyet" value="erkek"> Erkek <br />
+      <input type="radio" name="cinsiyet" value="kiz"> Kız <br />
+	  
+	 <div bgcolor = "red"> <h3>ücret bilgisi</h3>
+	  <input type="checkbox" name="ücret1" value="araba"> 12.000tl 10 saat çalışma <br />
+      <input type="checkbox" name="ücret2" value="ev"> 15.000tl 12 saat çalısma  <br /></div>
+	  
+	  <div><h3>pozisyon secimi</h3></div>
+	     <select name="pozisyon">
+         <option value="beyaz">veri girişi</option>
+         <option value="kirmizi">veri kontrol</option>
+         <option value="siyah">veri onay</option>
+      </select>
+</body>
+</html>
