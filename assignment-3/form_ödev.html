@@ -6,32 +6,39 @@
       <h2 align = "center"> ------ Personel Kayıt Form Bilgisi Girişi----</h2>
     </div>
   <form name="form" action="index.asp" method="post">
-      <b>Kullanıcı Adı:</b><br />
-      <input type="text" name="isim" size="24"><br />ß<br />
-      <b>Şifre:</b><br />
+      <b>Adınız SoyAdınız</b><br />
+      <input type="text" name="isim" size="24"><br /><br />
+      <b>tc kimlik bilgisi (sgk kayıt için)</b><br />
       <input type="password" name="sifre" size="16"><br /><br />
-      <input type="submit" name="gonder" value="Gönder"><br /><br />
    </form>
    
    
     <form name="form" action="index.asp" method="post">
-      <b>Yorumunuzu Yazın:</b><br />
-      <textarea cols="40" rows="4">Yorum Kutusu</textarea><br /><br />
+      <b>Referanslarınızı girin</b><br />
+      <textarea cols="40" rows="4">buraya!(yoksa boş bırakabilirsiniz</textarea><br /><br />
    </form>
    
    
      <input type="radio" name="cinsiyet" value="erkek"> Erkek <br />
       <input type="radio" name="cinsiyet" value="kiz"> Kız <br />
 	  
-	 <div bgcolor = "red"> <h3>ücret bilgisi</h3>
-	  <input type="checkbox" name="ücret1" value="araba"> 12.000tl 10 saat çalışma <br />
-      <input type="checkbox" name="ücret2" value="ev"> 15.000tl 12 saat çalısma  <br /></div>
+	 <div bgcolor = "yellow"> <h4>ücret bilgisi seviye 1 için</h4>
+	  <input type="checkbox" name="ücret1" value="ucr1"> 12.000tl 10 saat çalışma <br />
+      <input type="checkbox" name="ücret2" value="ucr2"> 15.000tl 12 saat çalısma  <br /></div>
 	  
-	  <div><h3>pozisyon secimi</h3>
-	     <select name="pozisyon">
-         <option value="beyaz">veri girişi</option>
-         <option value="kirmizi">veri kontrol</option>
-         <option value="siyah">veri onay</option>
-      </select></div>
-</body>
+	  <div>
+	     <select name="Pozisyon-ekip secimi">
+         <option value="ekb_1">tasarım ekibi</option>
+         <option value="ekp_2">donanım ve test ekibi</option>
+         <option value="ekp_3">yazılım-güncelleme ekibi</option>
+      </select>
+    </div>
+
+    <form name="bilgisi" action="index.asp" method="post">
+      <b>Adresinizi eksiksiz giriniz </b><br />
+      <textarea cols="40" rows="4">buraya!</textarea><br /><br />
+      <input type="submit" name="gonder" value="Gönder"><br /><br />
+   </form>
+   
+</body>ß
 </html>
